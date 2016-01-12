@@ -3,7 +3,12 @@
 ### Usage
 
 ```bash
-docker run -e OPERATION=create -e DRIVER=digitalocean -e VMNAME=myvm -e DIGITALOCEAN_ACCESS_TOKEN=your_token_here leanlabs/docker-machine-builder
+docker run \
+    -e OPERATION=create \
+    -e DRIVER=digitalocean \
+    -e VMNAME=myvm \
+    -e DIGITALOCEAN_ACCESS_TOKEN=your_token_here \
+    leanlabs/docker-machine-builder
 ```
 
 This command will create "myvm" virtual machine on digitalocean.
