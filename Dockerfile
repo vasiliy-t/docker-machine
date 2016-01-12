@@ -1,7 +1,8 @@
 FROM alpine:3.2
 
 ENV DRIVER=digitalocean \
-    OPERATION=create
+    OPERATION=create \
+    VMNAME=default
 
 RUN apk --update add curl && \
         curl -L https://github.com/docker/machine/releases/download/v0.5.2/docker-machine_linux-amd64.zip >machine.zip && \
