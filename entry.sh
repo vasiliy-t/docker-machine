@@ -1,3 +1,3 @@
 #!/bin/sh
 
-source /commands/$OPERATION.sh
+source /commands/$COMMAND.sh

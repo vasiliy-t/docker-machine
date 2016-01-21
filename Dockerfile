@@ -1,7 +1,7 @@
 FROM alpine:3.2
 
 ENV DRIVER=digitalocean \
-    OPERATION=create \
+    COMMAND=create \
     VMNAME=default
 
 RUN apk --update add curl && \
