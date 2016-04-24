@@ -1,3 +1,5 @@
 #!/bin/sh
 
-/usr/local/bin/docker-machine create --driver=$DRIVER $VMNAME
+DRIVERCOMMAND=`echo $DRIVER | tr '[:upper:]' '[:lower:]'`
+
+source /commands/create/$DRIVERCOMMAND.sh
