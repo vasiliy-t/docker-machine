@@ -5,7 +5,7 @@ ENV DRIVER=digitalocean \
     VMNAME=default
 
 RUN apk --update add curl && \
-        curl -L https://github.com/docker/machine/releases/download/v0.5.6/docker-machine_linux-amd64 >/usr/local/bin/docker-machine && \
+        curl -L https://github.com/docker/machine/releases/download/v0.7.0/docker-machine-`uname -s`-`uname -m` >/usr/local/bin/docker-machine && \
         chmod +x /usr/local/bin/docker-machine && \
         apk del --purge curl && \
         rm -rf /var/cache/apk/*
