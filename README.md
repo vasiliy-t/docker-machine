@@ -1,4 +1,6 @@
-# Docker machine builder
+# Docker Machine in docker
+
+[![](https://imagelayers.io/badge/leanlabs/docker-machine:latest.svg)](https://imagelayers.io/?images=leanlabs/docker-machine:latest 'Get your own badge on imagelayers.io')
 
 ### Usage
 
@@ -8,7 +10,7 @@ docker run \
     -e DRIVER=digitalocean \
     -e VMNAME=myvm \
     -e DIGITALOCEAN_ACCESS_TOKEN=your_token_here \
-    leanlabs/docker-machine-builder
+    leanlabs/docker-machine
 ```
 
 This command will create "myvm" virtual machine on digitalocean.
