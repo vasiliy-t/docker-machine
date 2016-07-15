@@ -18,7 +18,7 @@ This command will create "myvm" virtual machine on digitalocean.
 To pass additional parameters to docker-machine command just pass an appropriate environment variable, 
 e.g. if you want pass --digitalocean-access-token you can do it via -e DIGITALOCEAN_ACCESS_TOKEN=your_token_here.
 
-### Envrironment variables
+### Environment variables
 
 **COMMAND** - for passing actual docker-machine command to execute, there are just few of them supported for now
 
